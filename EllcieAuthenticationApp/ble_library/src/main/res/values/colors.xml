@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40968E</color>
+    <color name="colorPrimaryDark">#368179</color>
+    <color name="colorPrimaryLight">#11c1a7</color>
+    <color name="colorPrimarySupraLight">#a1f1d7</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorSecondary">#9DF3E8</color>
+
+    <color name="colorSignalStrength">#FF333F48</color>
+    <color name="colorDeviceIcon">#11c1a7</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="lightGray">#FFF5F5F5</color>
+    <color name="gray">#FF808080</color>
+
+    <color name="transparentGray">#7A000000</color>
+    <color name="top_main">#11c1a7</color>
+</resources>

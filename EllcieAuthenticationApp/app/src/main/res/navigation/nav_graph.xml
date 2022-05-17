@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/bleScanFragment"
+        android:name="com.ellcie.ellcieauthenticationapp.ui.ble.scan.BleScanFragment"
+        android:label="ble_scan_fragment"
+        tools:layout="@layout/ble_scan_fragment" >
+        <action
+            android:id="@+id/action_bleScanFragment_to_bleDeviceFragment"
+            app:destination="@id/bleDeviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bleDeviceFragment"
+        android:name="com.ellcie.ellcieauthenticationapp.ui.ble.device.BleDeviceFragment"
+        android:label="ble_device_fragment"
+        tools:layout="@layout/ble_device_fragment" >
+        <action
+            android:id="@+id/action_bleDeviceFragment_to_sosFragment"
+            app:destination="@id/sosFragment" />
+        <action
+            android:id="@+id/action_bleDeviceFragment_to_graphFragment"
+            app:destination="@id/graphFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ellcie.ellcieauthenticationapp.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_bleScanFragment"
+            app:destination="@id/bleScanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sosFragment"
+        android:name="com.ellcie.ellcieauthenticationapp.ui.sos.SosFragment"
+        android:label="sos_fragment"
+        tools:layout="@layout/sos_fragment" />
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.ellcie.ellcieauthenticationapp.ui.graph.GraphFragment"
+        android:label="graph_fragment"
+        tools:layout="@layout/graph_fragment" />
+</navigation>

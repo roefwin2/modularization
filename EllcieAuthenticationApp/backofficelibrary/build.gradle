@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id("dagger.hilt.android.plugin")
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    flavorDimensions 'env'
+    productFlavors {
+        envtest {
+            dimension 'env'
+            buildConfigField "String","API_END_POINT",'"https://api-test.ellcie-healthy.com"'
+        }
+        envpreprod {
+            dimension 'env'
+            buildConfigField "String","API_END_POINT",'"https://api-preprod.ellcie-healthy.com"'
+        }
+        envprod {
+            dimension 'env'
+            buildConfigField "String","API_END_POINT",'"https://api.ellcie-healthy.com"'
+        }
+    }
+}
+
+dependencies {
+
+    //retrofit
+    api  'com.squareup.retrofit2:retrofit:2.9.0'
+    api "com.squareup.retrofit2:converter-moshi:2.9.0"
+    api("com.squareup.moshi:moshi-kotlin:1.12.0")
+    implementation project(path: ':toolkitlibrary')
+    //implementation project(path: ':toolkitlibrary')
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.12.0"
+
+    //httplogger
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    //couroutine flow
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.0'
+
+    //hilt
+    implementation("com.google.dagger:hilt-android:2.38.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+
+}

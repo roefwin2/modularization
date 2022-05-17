@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ble_library</string>
+    <string name="vocale_message_generic_error">to_define</string>
+    <string name="vocale_message_sensor_error">to_define</string>
+    <string name="vocal_message_risk_level_1" />
+    <string name="vocal_message_risk_level_2">to_define</string>
+    <string name="vocal_message_risk_level_3">to_define</string>
+    <string name="vocale_message_drowsiness_detected_level_4">to_define</string>
+    <string name="vocale_message_drowsiness_detected">to_define</string>
+    <string name="vocale_message_pause_required">to_define</string>
+    <string name="title_notification_battery_low">to_define</string>
+    <string name="notification_battery_level_low">"Niveau de batterie des lunettes faible (%1$d %%), pensez à les recharger."</string>
+    <string name="close_ellcie_app_text">to_define</string>
+    <string name="error_log_in_weak_password">to_define</string>
+    <string name="mail_already_sign_in">to_define</string>
+    <string name="impossible_to_create_account_retry">to_define</string>
+    <string name="google_signin_fail_message">to_define</string>
+    <string name="verification_email">to_define</string>
+    <string name="service_notif_title">to_define</string>
+    <string name="service_notification_text_glasses_connected">to_define</string>
+    <string name="service_is_running_tap_to_open_notif_message">to_define</string>
+    <string name="service_notification_text_glasses_disconnected">to_define</string>
+    <string name="vocale_message_alert_confirmed">Procédure d\'alerte en cours, restez calme et respirez profondément. En attendant les secours, essayez de prendre la position qui vous semble la plus confortable.</string>
+    <string name="vocale_message_sos_countdown_initiated_by_mobile">SOS déclenché, si vous allez bien, annulez cette alerte depuis votre téléphone.</string>
+    <string name="vocale_message_sos_countdown_initiated_by_glasses">SOS déclenché, si vous allez bien, annulez cette alerte depuis votre téléphone ou remettez vos lunettes à l\'endroit</string>
+    <string name="vocale_message_fall_countdown_initiated">Alerte détectée. Si vous allez bien, annulez cette alerte depuis votre téléphone mobile. Vous pouvez également annuler l’alerte en enlevant et en remettant vos lunettes, tout en gardant la tête bien droite.</string>
+
+
+    // Connection State
+    <string name="device_status_connecting" > Connexion à %s...</string>
+    <string name="device_status_connecting_no_name">Connexion en cours...</string>
+    <string name="device_status_connected">%s sont connectées</string>
+
+</resources>

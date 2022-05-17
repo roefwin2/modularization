@@ -1,0 +1,7 @@
+<resources>
+    <string name="vocale_message_generic_error">Une anomalie empêche la bonne analyse de votre trajet. Par sécurité le trajet a donc été arrêté</string>
+    <string name="vocale_message_alert_confirmed">Procédure d\'alerte en cours, restez calme et respirez profondément. En attendant les secours, essayez de prendre la position qui vous semble la plus confortable.</string>
+    <string name="vocale_message_sos_countdown_initiated_by_mobile">SOS déclenché, si vous allez bien, annulez cette alerte depuis votre téléphone.</string>
+    <string name="vocale_message_sos_countdown_initiated_by_glasses">SOS déclenché, si vous allez bien, annulez cette alerte depuis votre téléphone ou remettez vos lunettes à l\'endroit</string>
+    <string name="vocale_message_fall_countdown_initiated">Alerte détectée. Si vous allez bien, annulez cette alerte depuis votre téléphone mobile. Vous pouvez également annuler l’alerte en enlevant et en remettant vos lunettes, tout en gardant la tête bien droite.</string>
+</resources>

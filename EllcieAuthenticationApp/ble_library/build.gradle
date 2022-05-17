@@ -1,0 +1,91 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':request_library')
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    /*BLE*/
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'no.nordicsemi.android:log:2.1.1'
+    implementation 'no.nordicsemi.android.support.v18:scanner:1.5.1'
+    implementation 'no.nordicsemi.android:ble:2.4.0.beta02'
+
+    implementation 'no.nordicsemi.android:ble-livedata:2.3.1'
+    implementation 'no.nordicsemi.android:log:2.1.1'
+
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+
+    // Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-service:2.4.1'
+
+
+    /*Stringify*/
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    /* Analytics */
+    implementation 'com.google.android.gms:play-services-analytics:17.0.1'
+
+    implementation 'net.openid:appauth:0.9.1'
+
+
+    /* Async messages */
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    implementation 'androidx.annotation:annotation:1.2.0'
+
+    /* Crash reporting */
+    implementation('com.google.firebase:firebase-crashlytics:18.2.3') {
+        transitive = true
+    }
+
+    //use retrofit as client
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation project(path: ':ellcie_common')
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
+
+allprojects {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+    }
+}

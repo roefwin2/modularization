@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">ble_library</string>
+    <string name="vocale_message_generic_error">to_define</string>
+    <string name="vocale_message_sensor_error">to_define</string>
+    <string name="vocal_message_risk_level_1" />
+    <string name="vocal_message_risk_level_2">to_define</string>
+    <string name="vocal_message_risk_level_3">to_define</string>
+    <string name="vocale_message_drowsiness_detected_level_4">to_define</string>
+    <string name="vocale_message_drowsiness_detected">to_define</string>
+    <string name="vocale_message_pause_required">to_define</string>
+    <string name="title_notification_battery_low">to_define</string>
+    <string name="notification_battery_level_low">"Niveau de batterie des lunettes faible (%1$d %%), pensez à les recharger."</string>
+    <string name="close_ellcie_app_text">to_define</string>
+    <string name="error_log_in_weak_password">to_define</string>
+    <string name="mail_already_sign_in">to_define</string>
+    <string name="impossible_to_create_account_retry">to_define</string>
+    <string name="google_signin_fail_message">to_define</string>
+    <string name="verification_email">to_define</string>
+    <string name="service_notif_title">to_define</string>
+    <string name="service_notification_text_glasses_connected">to_define</string>
+    <string name="service_is_running_tap_to_open_notif_message">to_define</string>
+    <string name="service_notification_text_glasses_disconnected">to_define</string>
+    <string name="vocale_message_alert_confirmed">Alert procedure in progress, stay calm and breathe deeply. While waiting for help, try to take the position that seems most comfortable.</string>
+    <string name="vocale_message_sos_countdown_initiated_by_mobile">SOS triggered, if you are okay, cancel this alert from your phone.</string>
+    <string name="vocale_message_sos_countdown_initiated_by_glasses">SOS triggered, if you\'re okay, cancel this alert from your phone or put your glasses in place.</string>
+    <string name="vocale_message_fall_countdown_initiated">Alert detected, if you\'re okay,  cancel this alert from your phone. You can also cancel the alert by removing and putting your glasses back on, while keeping your head straight.</string>
+
+
+    // for shared preference keys
+    <string name="preference_file_key" translatable="false">com.ellcie_healthy.research.PREFERENCE_FILE_KEY</string>
+    <string name="saved_device_address" translatable="false">com.ellcie_healthy.research.SAVED_DEVICE_ADDRESS</string>
+    <string name="saved_device_serial" translatable="false">com.ellcie_healthy.research.SAVED_DEVICE_SERIAL</string>
+    <string name="saved_permission_location_requested" translatable="false">com.ellcie_healthy.research.PERMISSION_LOCATION_REQUESTED</string>
+    <string name="saved_streaming_directory_path" translatable="false">com.ellcie_healthy.research.STREAMING_DIRECTORY_PATH</string>
+    <string name="saved_streaming_enabled" translatable="false">com.ellcie_healthy.research.SAVE_STREAMING_ENABLED</string>
+
+    // for encrypted shared preference
+    <string name="encrypted_preference_file_key" translatable="false">com.ellcie_healthy.research.ENCRYPTED_PREFERENCE_FILE_KEY</string>
+    <string name="saved_license" translatable="false">com.ellcie_healthy.research.SAVED_LICENSE</string>
+
+    // Connection State
+    <string name="device_status_connecting">Connecting to %s...</string>
+    <string name="device_status_connecting_no_name">Connecting...</string>
+    <string name="device_status_connected">%s are connected</string>
+    <string name="device_status_disconnecting" translatable="false">Disconnecting from %s...</string>
+    <string name="device_status_disconnecting_no_name" translatable="false">Disconnecting...</string>
+    <string name="device_status_disconnected" translatable="false">Disconnected from %s...</string>
+    <string name="device_status_disconnected_no_name" translatable="false">Disconnected...</string>
+    <string name="device_status_initializing" translatable="false">Initializing %s...</string>
+    <string name="bluetooth_reconnect_action" translatable="false">Reconnect</string>
+    <string name="device_status_terminate_peer_user" translatable="false">A connection shutdown has been requested by your glasses.\nThis can happen when glasses are shake for pairing.\n\nIf you think it is a mistake, please click on the button below.</string>
+
+
+
+</resources>

@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id("dagger.hilt.android.plugin")
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    flavorDimensions 'env'
+    productFlavors {
+        envtest {
+            dimension 'env'
+            buildConfigField "String","AUTH_END_POINT",'"https://auth-test.ellcie-healthy.com/auth/realms/ellcie/protocol/openid-connect/auth"'
+            buildConfigField "String","TOKEN_END_POINT",'"https://auth-test.ellcie-healthy.com/auth/realms/ellcie/protocol/openid-connect/token"'
+            buildConfigField "String","BASE_END_POINT",'"https://auth-test.ellcie-healthy.com/auth/realms/ellcie/protocol/openid-connect/"'
+            buildConfigField "String","URL_REDIRECTION",'"https://mobile.ellcie-healthy.com/redirect-driver.html"'
+
+        }
+        envpreprod {
+            dimension 'env'
+            buildConfigField "String","AUTH_END_POINT",'"https://auth-preprod.ellcie-healthy.com/auth/realms/ellcie/protocol/openid-connect/auth"'
+            buildConfigField "String","TOKEN_END_POINT",'"https://auth-preprod.ellcie-healthy.com/auth/realms/ellcie/protocol/openid-connect/token"'
+            buildConfigField "String","BASE_END_POINT",'"https://auth-preprod.ellcie-healthy.com/auth/realms/ellcie/protocol/openid-connect/"'
+            buildConfigField "String","URL_REDIRECTION",'"https://mobile.ellcie-healthy.com/redirect-driver.html"'
+        }
+        envprod {
+            dimension 'env'
+            buildConfigField "String","AUTH_END_POINT",'"https://auth.ellcie-healthy.com/auth/realms/ellcie/protocol/openid-connect/auth"'
+            buildConfigField "String","TOKEN_END_POINT",'"https://auth.ellcie-healthy.com/auth/realms/ellcie/protocol/openid-connect/token"'
+            buildConfigField "String","BASE_END_POINT",'"https://auth.ellcie-healthy.com/auth/realms/ellcie/protocol/openid-connect/"'
+            buildConfigField "String","URL_REDIRECTION",'"https://mobile.ellcie-healthy.com/redirect-driver.html"'
+
+        }
+    }
+}
+
+dependencies {
+    api 'net.openid:appauth:0.9.1'
+
+    //retrofit
+    api  'com.squareup.retrofit2:retrofit:2.9.0'
+    api "com.squareup.retrofit2:converter-moshi:2.9.0"
+    api("com.squareup.moshi:moshi-kotlin:1.12.0")
+    implementation project(path: ':toolkitlibrary')
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.12.0"
+
+    //httplogger
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    //couroutine flow
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.0'
+
+    //hilt
+    implementation("com.google.dagger:hilt-android:2.38.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+}

@@ -1,0 +1,19 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "EllcieAuthenticationApp"
+include ':app'
+include ':ellcieauthenticationlibrary'
+include ':toolkitlibrary'
+include ':backofficelibrary'
+include ':ellciefirebaselibrary'
+include ':nordicblelibrary'
+include ':ble_library'
+include ':ellcie_common'
+include ':request_library'

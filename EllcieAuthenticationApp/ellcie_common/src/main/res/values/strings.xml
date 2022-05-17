@@ -1,0 +1,8 @@
+<resources>
+    <string name="vocale_message_generic_error">"An anomaly prevents the proper analysis of your trip. For safety, the trip was stopped"</string>
+
+    <string name="vocale_message_alert_confirmed">Alert procedure in progress, stay calm and breathe deeply. While waiting for help, try to take the position that seems most comfortable.</string>
+    <string name="vocale_message_sos_countdown_initiated_by_mobile">SOS triggered, if you are okay, cancel this alert from your phone.</string>
+    <string name="vocale_message_sos_countdown_initiated_by_glasses">SOS triggered, if you\'re okay, cancel this alert from your phone or put your glasses in place.</string>
+    <string name="vocale_message_fall_countdown_initiated">Alert detected, if you\'re okay,  cancel this alert from your phone. You can also cancel the alert by removing and putting your glasses back on, while keeping your head straight.</string>
+</resources>

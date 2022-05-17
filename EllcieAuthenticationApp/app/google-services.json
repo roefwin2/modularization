@@ -1,0 +1,214 @@
+{
+  "project_info": {
+    "project_number": "796254869927",
+    "firebase_url": "https://ellcie-test-environment.firebaseio.com",
+    "project_id": "ellcie-test-environment",
+    "storage_bucket": "ellcie-test-environment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796254869927:android:f98a9476de9be71194fe82",
+        "android_client_info": {
+          "package_name": "com.ellcie.ellcieauthenticationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXB6msln0Iq7_SCRA8ZHxtkudcLqwu1SY"
+        },
+        {
+          "current_key": "AIzaSyCrrWkliVLb2GUrKD0k0yzuGYICcLDQSz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "796254869927-2q3iief3pq7sk7or5v155jgdu49vcosu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ellciehealthy.driver.dev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796254869927:android:e5a064426f8398c494fe82",
+        "android_client_info": {
+          "package_name": "com.ellcie.healthy.gateway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796254869927-85cm7p9u8th6pr1mj7u207n62fign7ii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ellcie.healthy.gateway",
+            "certificate_hash": "d32162ccc065add7414aeb7fd65306af6bedcb8c"
+          }
+        },
+        {
+          "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXB6msln0Iq7_SCRA8ZHxtkudcLqwu1SY"
+        },
+        {
+          "current_key": "AIzaSyCrrWkliVLb2GUrKD0k0yzuGYICcLDQSz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "796254869927-2q3iief3pq7sk7or5v155jgdu49vcosu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ellciehealthy.driver.dev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796254869927:android:09457211844dcda3",
+        "android_client_info": {
+          "package_name": "com.ellcie_healthy.ellcie_mobile_app_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXB6msln0Iq7_SCRA8ZHxtkudcLqwu1SY"
+        },
+        {
+          "current_key": "AIzaSyCrrWkliVLb2GUrKD0k0yzuGYICcLDQSz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "796254869927-2q3iief3pq7sk7or5v155jgdu49vcosu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ellciehealthy.driver.dev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796254869927:android:c61c9d8382e0745e94fe82",
+        "android_client_info": {
+          "package_name": "com.ellcie_healthy.ellcie_mobile_app_fall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXB6msln0Iq7_SCRA8ZHxtkudcLqwu1SY"
+        },
+        {
+          "current_key": "AIzaSyCrrWkliVLb2GUrKD0k0yzuGYICcLDQSz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "796254869927-2q3iief3pq7sk7or5v155jgdu49vcosu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ellciehealthy.driver.dev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796254869927:android:50b0aba80462f47394fe82",
+        "android_client_info": {
+          "package_name": "com.example.driveroauthdemoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXB6msln0Iq7_SCRA8ZHxtkudcLqwu1SY"
+        },
+        {
+          "current_key": "AIzaSyCrrWkliVLb2GUrKD0k0yzuGYICcLDQSz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796254869927-0ld0r3409i02kgvs1jndc6msjc1t47td.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "796254869927-2q3iief3pq7sk7or5v155jgdu49vcosu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ellciehealthy.driver.dev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

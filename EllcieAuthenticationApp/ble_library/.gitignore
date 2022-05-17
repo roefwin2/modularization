@@ -1,0 +1,6 @@
+/build
+*.iml
+ble_library.iml
+/.idea
+/local.properties
+/.git_save

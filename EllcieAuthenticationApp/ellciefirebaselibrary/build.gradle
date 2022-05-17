@@ -1,0 +1,67 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id("dagger.hilt.android.plugin")
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    flavorDimensions 'env'
+    productFlavors {
+        envtest {
+            dimension 'env'
+        }
+        envpreprod {
+            dimension 'env'
+        }
+        envprod {
+            dimension 'env'
+        }
+    }
+}
+
+dependencies {
+    //httplogger
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    //couroutine flow
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.0'
+
+    //hilt
+    implementation("com.google.dagger:hilt-android:2.38.1")
+    implementation project(path: ':toolkitlibrary')
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'
+    implementation 'com.google.firebase:firebase-database-ktx:20.0.3'
+    kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+
+    //moshi
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.12.0"
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+}
